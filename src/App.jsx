@@ -11,20 +11,19 @@ function App() {
     <>
       <Navbar />
       {/* Header Section */}
-      <Header/>
+      <Header />
 
       {/* About me Section */}
-      <AboutMe/>
+      <AboutMe />
 
       {/* Skills section */}
-      <Skills/>
+      <Skills />
 
       {/* Experience */}
-      <Experience/>
+      <Experience />
 
       {/* Contact me */}
-      <Contact/>
-
+      <Contact />
     </>
   );
 }
