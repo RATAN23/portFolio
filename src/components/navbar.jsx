@@ -13,7 +13,7 @@ const theme = createTheme({
   palette: {
     primary: {
       light: "#ffffff",
-      main: "#eeeee",
+      main: "#f5f5f5",
       dark: "#002884",
       contrastText: "#000",
     },
@@ -36,7 +36,7 @@ const Navbar = () => {
               layout
               initial={{ x: -300 }}
               animate={{ x: 0 }}
-              transition={{ ease: "linear", duration: 0.5 }}
+              transition={{ ease: "linear", duration: 0.7 }}
               exit={{ x: 300 }}
             >
               <Box
@@ -44,7 +44,6 @@ const Navbar = () => {
                 height={70}
                 sx={{
                   display: "flex",
-                  gap: "10px",
                   justifyContent: "space-around",
                 }}
               >
@@ -54,7 +53,7 @@ const Navbar = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    gap: "15px",
+                    gap: "20px",
                   }}
                 >
                   <a href="/">

@@ -9,21 +9,25 @@ import Header from "./components/header";
 function App() {
   return (
     <>
-      <Navbar />
-      {/* Header Section */}
-      <Header />
+      <div className="h-screen ">
+        <Navbar />
+        {/* Header Section */}
+        <Header />
 
-      {/* About me Section */}
-      <AboutMe />
+        {/* About me Section */}
+        <section className="snap-start">
+          <AboutMe />
+        </section>
 
-      {/* Skills section */}
-      <Skills />
+        {/* Skills section */}
+        <Skills />
 
-      {/* Experience */}
-      <Experience />
+        {/* Experience */}
+        <Experience />
 
-      {/* Contact me */}
-      <Contact />
+        {/* Contact me */}
+        <Contact />
+      </div>
     </>
   );
 }
