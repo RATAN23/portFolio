@@ -6,9 +6,11 @@ import Experience from "./components/experience";
 import Contact from "./components/contact";
 import Header from "./components/header";
 
+
 function App() {
   return (
     <>
+   
       <div className="h-screen ">
         <Navbar />
         {/* Header Section */}
@@ -28,6 +30,7 @@ function App() {
         {/* Contact me */}
         <Contact />
       </div>
+     
     </>
   );
 }
