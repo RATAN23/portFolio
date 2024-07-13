@@ -14,7 +14,7 @@ function App() {
       <div className="h-screen ">
         <Navbar />
         {/* Header Section */}
-        <AboutMe />
+        <Header />
 
         {/* About me Section */}
         <section className="snap-start">
