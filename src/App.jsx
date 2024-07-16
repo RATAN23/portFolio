@@ -5,12 +5,12 @@ import Skills from "./components/skills";
 import Experience from "./components/experience";
 import Contact from "./components/contact";
 import Header from "./components/header";
-
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <>
-   
+    <Analytics/>
       <div className="h-screen ">
         <Navbar />
         {/* Header Section */}
