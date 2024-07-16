@@ -1,4 +1,3 @@
-import { cn } from "//lib/utils.js";
 
 export default function Marquee({
   className,
@@ -61,3 +60,4 @@ export default function Marquee({
     </>
   );
 }
+
