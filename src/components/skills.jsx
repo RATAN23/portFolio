@@ -1,6 +1,6 @@
-import { cn } from "/Users/ratanghasti/Documents/personalWebsite/personalWebsite/src/src/lib/utils.js";
-import Marquee from "/Users/ratanghasti/Documents/personalWebsite/personalWebsite/src/src/components/magicui/marquee.jsx";
-import { radioClasses } from "@mui/material";
+import { cn } from "../src/lib/utils.js";
+import Marquee from "../src/components/magicui/marquee.jsx";
+
 
 const reviews = [
   {
