@@ -6,19 +6,17 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 const AboutMe = () => {
   const [visible, clearText] = useState(false);
   const [text] = useTypewriter({
-    words: ["Hey! I'm Ratan :)", "Let me take you through my world."],
-    loop: 1,
-    typeSpeed: 100,
-    delaySpeed: 100,
-    deleteSpeed: 100,
-    onLoopDone: () => {
+    words: ["Hey! I'm Ratan :)"],
+    loop: 2,
+    typeSpeed: 300,
+    onDelete: () => {
       clearText(true);
     },
   });
 
   return (
     <>
-      <div className="flex flex-col relative h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto pt-16">
+      <div className="flex flex-col h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto bg-background  pt-16">
         <div className="top-[40px] md:absolute md:top-[20%] lg:absolute   uppercase tracking-[5px] md:tracking-[20px] lg:tracking-[20px] text-gray-400 text-2xl">
           About
         </div>
@@ -29,7 +27,7 @@ const AboutMe = () => {
         ></img>
         <div className="h-1/2 mx-auto md:h-auto lg:h-auto w-[90%] md:w-1/2 lg:w-1/2 ">
           {!visible && (
-            <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold px-16 text-black dark:text-gray-400">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold px-16 text-gray-400 dark:text-white">
               <span className="font-outfit">{text}</span>
               <Cursor cursorBlinking={false} />
             </h1>

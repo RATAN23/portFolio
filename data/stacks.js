@@ -18,6 +18,8 @@ const Stacks = {
   NodeJs: React.createElement(StackIcon, { name: "nodejs", style }),
   Redis: React.createElement(StackIcon, { name: "redis", style }),
   Webpack: React.createElement(StackIcon, { name: "webpack", style }),
+  Prisma: React.createElement(StackIcon, { name: "prisma", style }),
+  CSS: React.createElement(StackIcon, { name: "css3", style }),
 };
 
 export default Stacks;

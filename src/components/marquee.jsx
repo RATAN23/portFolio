@@ -6,9 +6,9 @@ export default function Marquee({
   pauseOnHover = false,
   children,
   vertical,
-  repeat = 4,
+  repeat = 10,
   gap = "0.5rem", // Default gap
-  duration = "10s", // Default duration
+  duration = "20s", // Default duration
   ...props
 }) {
   const direction = vertical ? "vertical" : "horizontal";

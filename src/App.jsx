@@ -25,7 +25,9 @@ function App() {
         <Skills />
 
         {/* Experience */}
-        <Experience />
+        <section className="snap-center">
+          <Experience />
+        </section>
 
         {/* Contact me */}
         <Contact />
