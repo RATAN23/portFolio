@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Chip from '@mui/material/Chip';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import Chip from "@mui/material/Chip";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const AboutMe = () => {
   const [visible, clearText] = useState(false);
@@ -28,34 +28,48 @@ const AboutMe = () => {
           alt="ratan's photo"
         ></img>
         <div className="h-1/2 mx-auto md:h-auto lg:h-auto w-[90%] md:w-1/2 lg:w-1/2 ">
-      
           {!visible && (
             <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold px-16 text-black dark:text-gray-400">
               <span className="font-outfit">{text}</span>
               <Cursor cursorBlinking={false} />
             </h1>
           )}
-          {visible &&  (
+          {visible && (
             <>
-              <Chip label="open to opportunities" color="primary" variant="outlined" icon={<CheckCircleIcon/>} />
-              <br/>
-              <br/>
-            <p className="text-sm font-normal md:text-lg lg:text-lg overflow-visible">
-              I'm a passionate{" "}
-              <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">Software Developer </span>
-              {" "}with over three years of experience at{" "}
-             <span className="text-nowrap bg-gradient-to-r  from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">SAP Labs India</span>  
-              .{" "}Crafting sophisticated answers to complicated questions drives me.
-              <br></br>
-              <br></br>
-              I've also led as the Events Head for the club <br/> 
-              <span className="text-nowrap bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">Entrepreneurship-Cell UVCE</span>
-              ,{" "}collaborating with industry leaders. 
-              <br></br>
-              <br></br>
-              Outside of work, I enjoy reading books, playing badminton, writing poetry and watching movies while sipping{" "}
-              <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">a cup of chai.</span>
-            </p>
+              <Chip
+                label="open to opportunities"
+                color="primary"
+                variant="outlined"
+                icon={<CheckCircleIcon />}
+              />
+              <br />
+              <br />
+              <p className="text-sm font-normal md:text-lg lg:text-lg overflow-visible">
+                I'm a passionate{" "}
+                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                  Software Developer{" "}
+                </span>{" "}
+                with over three years of experience at{" "}
+                <span className="text-nowrap bg-gradient-to-r  from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                  SAP Labs India
+                </span>
+                . Crafting sophisticated answers to complicated questions drives
+                me.
+                <br></br>
+                <br></br>
+                I've also led as the Events Head for the club <br />
+                <span className="text-nowrap bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                  Entrepreneurship-Cell UVCE
+                </span>
+                , collaborating with industry leaders.
+                <br></br>
+                <br></br>
+                Outside of work, I enjoy reading books, playing badminton,
+                writing poetry and watching movies while sipping{" "}
+                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                  a cup of chai.
+                </span>
+              </p>
             </>
           )}
         </div>
