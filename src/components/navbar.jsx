@@ -57,22 +57,36 @@ const Navbar = () => {
                   }}
                 >
                   <a href="/">
-                    <HomeIcon fontSize="large"/>
+                    <HomeIcon 
+                     sx={{
+                        width : "30px",
+                        height : "30px"
+                    }}/>
                   </a>
-                  <a href="https://x.com/ratan_23">
-                    <XIcon fontSize="large" />
+                  <a className="hidden md:block lg:block" href="https://x.com/ratan_23">
+                    <XIcon 
+                    sx={{
+                      width : "26px",
+                      height : "26px"
+                  }} />
                   </a>
-                  <a href="https://github.com/RATAN23">
-                    <GitHubIcon fontSize="large" />
+                  <a href="https://github.com/RATAN23" >
+                    <GitHubIcon sx={{
+                      width : "26px",
+                      height : "26px"
+                  }}  />
                   </a>
                   <a href="https://linkedin.com/in/ratan-ghasti">
-                    <LinkedInIcon fontSize="large" />
+                    <LinkedInIcon  sx={{
+                      width : "26px",
+                      height : "26px"
+                  }}  />
                   </a>
                   <a href="https://leetcode.com/u/rnghasti42/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="1.9em"
-                      height="1.7em"
+                      width="1.5em"
+                      height="1.5em"
                       viewBox="0 0 32 32"
                     >
                       <path
@@ -83,10 +97,13 @@ const Navbar = () => {
                   </a>
                 </Box>
 
-                <div className="flex justify-center items-center">
+                <div className="flex ">
                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ratannghasti@gmail.com" 
-                     target="_blank" className="flex justify-center items-center content-center">
-                    <MessageIcon className="mt-1" fontSize="large" />
+                     target="_blank" className="flex justify-center items-center ">
+                    <MessageIcon className="mt-1"  sx={{
+                      width : "26px",
+                      height : "26px"
+                  }}  />
                     <p className="hidden md:block lg:ml-1 lg:block text-nowrap">Get in touch</p>
                   </a>
                  
