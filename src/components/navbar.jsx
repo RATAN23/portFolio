@@ -97,17 +97,12 @@ const Navbar = () => {
                   </a>
                 </Box>
 
-                <div className="flex ">
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ratannghasti@gmail.com" 
-                     target="_blank" className="flex justify-center items-center ">
-                    <MessageIcon className="mt-1"  sx={{
-                      width : "26px",
-                      height : "26px"
-                  }}  />
-                    <p className="hidden md:block lg:ml-1 lg:block text-nowrap">Get in touch</p>
-                  </a>
-                 
+                <div className="flex justify-center items-center cursor-pointer"
+                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ratannghasti@gmail.com', '_blank')}>
+                  <MessageIcon className="mt-1" fontSize="medium" />
+                  <p className="hidden lg:ml-1 md:ml-1 md:block lg:block whitespace-nowrap">Get in touch</p>
                 </div>
+
               </Box>
             </motion.div>
           </AnimatePresence>
