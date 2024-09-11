@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <div>
       <div className="flex flex-col relative h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto pt-16">
-        <div className="top-[18%] absolute md:absolute md:top-[20%] lg:top-[25%]  uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[30px] text-gray-400 text-2xl">
+        <div className="top-[18%] absolute md:absolute md:top-[20%] lg:top-[25%]  uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[30px] text-gray-400 text-3xl">
           Experience
         </div>
         <div className="w-full mt-20 flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-transparent scrollbar-thin">

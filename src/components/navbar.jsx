@@ -57,22 +57,22 @@ const Navbar = () => {
                   }}
                 >
                   <a href="/">
-                    <HomeIcon />
+                    <HomeIcon fontSize="large"/>
                   </a>
                   <a href="https://x.com/ratan_23">
-                    <XIcon fontSize="medium" />
+                    <XIcon fontSize="large" />
                   </a>
                   <a href="https://github.com/RATAN23">
-                    <GitHubIcon fontSize="medium" />
+                    <GitHubIcon fontSize="large" />
                   </a>
                   <a href="https://linkedin.com/in/ratan-ghasti">
-                    <LinkedInIcon fontSize="medium" />
+                    <LinkedInIcon fontSize="large" />
                   </a>
                   <a href="https://leetcode.com/u/rnghasti42/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="2em"
-                      height="1.3em"
+                      width="1.9em"
+                      height="1.7em"
                       viewBox="0 0 32 32"
                     >
                       <path
@@ -83,11 +83,13 @@ const Navbar = () => {
                   </a>
                 </Box>
 
-                <div className="flex justify-center items-center gap-3  ">
-                  <a href="/">
-                    <MessageIcon fontSize="medium" />
+                <div className="flex justify-center items-center">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ratannghasti@gmail.com" 
+                     target="_blank" className="flex justify-center items-center content-center">
+                    <MessageIcon className="mt-1" fontSize="large" />
+                    <p className="hidden md:block lg:ml-1 lg:block text-nowrap">Get in touch</p>
                   </a>
-                  <p className="hidden lg:block text-nowrap">Get in touch</p>
+                 
                 </div>
               </Box>
             </motion.div>

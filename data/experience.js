@@ -6,7 +6,7 @@ export const Experiences = [
     title: "Associate Developer",
     company: "SAP LABS INDIA",
     startDate: "July 2021",
-    endDate: "  ",
+    endDate: "June 2024",
     point1:
       "Developed new features for Visual Business, enhancing the product's functionality and user experience, resulting in a 20% increase in user satisfaction.",
     point2:

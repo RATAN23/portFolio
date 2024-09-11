@@ -8,7 +8,7 @@ const AboutMe = () => {
   const [text] = useTypewriter({
     words: ["Hey! I'm Ratan :)"],
     loop: 2,
-    typeSpeed: 300,
+    typeSpeed: 80,
     onDelete: () => {
       clearText(true);
     },
@@ -17,7 +17,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="flex flex-col h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto bg-background  pt-16">
-        <div className="top-[40px] md:absolute md:top-[20%] lg:absolute   uppercase tracking-[5px] md:tracking-[20px] lg:tracking-[20px] text-gray-400 text-2xl">
+        <div className="top-[40px] md:absolute md:top-[20%] lg:absolute   uppercase tracking-[5px] md:tracking-[20px] lg:tracking-[20px] text-gray-400  text-3xl">
           About
         </div>
         <img
