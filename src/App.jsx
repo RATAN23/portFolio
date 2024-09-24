@@ -6,32 +6,36 @@ import Experience from "./components/experience";
 import Contact from "./components/contact";
 import Header from "./components/header";
 import { Analytics } from "@vercel/analytics/react";
+import { DarkModeProvider } from "./context/darkMode";
 
 function App() {
   return (
     <>
+
       <Analytics />
-      <div className="h-screen ">
-        <Navbar />
-        {/* Header Section */}
-        <Header />
+      <DarkModeProvider>
+        <div className="h-screen ">
+          <Navbar />
+          {/* Header Section */}
+          <Header />
 
-        {/* About me Section */}
-        <section className="snap-start">
-          <AboutMe />
-        </section>
+          {/* About me Section */}
+          <section className="snap-start">
+            <AboutMe />
+          </section>
 
-        {/* Skills section */}
-        <Skills />
+          {/* Skills section */}
+          <Skills />
 
-        {/* Experience */}
-        <section className="snap-center">
-          <Experience />
-        </section>
+          {/* Experience */}
+          <section className="snap-center">
+            <Experience />
+          </section>
 
-        {/* Contact me */}
-        <Contact />
-      </div>
+          {/* Contact me */}
+          <Contact />
+        </div>
+      </DarkModeProvider>
     </>
   );
 }

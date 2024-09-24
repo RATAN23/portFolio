@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import AppBar from "@mui/material/AppBar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import HomeIcon from "@mui/icons-material/Home";
@@ -8,18 +8,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MessageIcon from "@mui/icons-material/Message";
 import { motion, AnimatePresence } from "framer-motion";
+import { darkModeContext } from "../context/darkMode";
 
 const theme = createTheme({
   palette: {
     primary: {
       light: "#ffffff",
-      main: "#f5f5f5",
+      main: "#e1e2e2",
       dark: "#002884",
       contrastText: "#000",
     },
     secondary: {
       light: "#ff7961",
-      main: "#f44336",
+      main: "#f4ff36",
       dark: "#ba000d",
       contrastText: "#000",
     },
@@ -27,10 +28,12 @@ const theme = createTheme({
 });
 
 const Navbar = () => {
+  const {isDarkMode , toggleDarkMode} = useContext(darkModeContext);
+
   return (
     <>
       <ThemeProvider theme={theme}>
-        <AppBar position="fixed" color="primary">
+        <AppBar position="fixed" color="primary" className="bg-gray-200 dark:bg-[#dcdcdc]">
           <AnimatePresence>
             <motion.div
               layout
@@ -97,10 +100,18 @@ const Navbar = () => {
                   </a>
                 </Box>
 
-                <div className="flex justify-center items-center cursor-pointer"
-                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ratannghasti@gmail.com', '_blank')}>
+                <div className="flex justify-center items-center cursor-pointer space-x-5">
+                  {
+                    isDarkMode ? (
+                      <img width="23" height="23" src="https://img.icons8.com/glyph-neue/64/bright-moon.png" onClick ={toggleDarkMode} alt="bright-moon"/>
+                    ) :
+                    (
+                      <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" onClick ={toggleDarkMode}  alt="sun--v1"/>
+                    )
+                  }
+                  
                   <MessageIcon className="mt-1" fontSize="medium" />
-                  <p className="hidden lg:ml-1 md:ml-1 md:block lg:block whitespace-nowrap">Get in touch</p>
+                  {/* <p className="hidden lg:ml-1 md:ml-1 md:block lg:block whitespace-nowrap">Get in touch</p> */}
                 </div>
 
               </Box>
