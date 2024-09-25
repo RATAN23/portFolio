@@ -41,7 +41,7 @@ const Navbar = () => {
               initial={{ x: -300 }}
               animate={{ x: 0 }}
               transition={{ ease: "linear", duration: 0.7 }}
-              exit={{ x: 300 }}
+              exit={{ x: 300 }}le
             >
               <Box
                 width="100vw"

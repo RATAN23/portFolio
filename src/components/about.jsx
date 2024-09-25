@@ -44,11 +44,11 @@ const AboutMe = () => {
               <br />
               <p className="text-sm font-normal md:text-lg lg:text-lg overflow-visible text-darkText">
                 I'm a passionate{" "}
-                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%">
                   Software Developer{" "}
                 </span>{" "}
                 with over three years of experience at{" "}
-                <span className="text-nowrap bg-gradient-to-r  from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                <span className="text-nowrap bg-gradient-to-r  from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%"> 
                   SAP Labs India
                 </span>
                 . Crafting sophisticated answers to complicated questions drives
@@ -56,7 +56,7 @@ const AboutMe = () => {
                 <br></br>
                 <br></br>
                 I've also led as the Events Head for the club <br />
-                <span className="text-nowrap bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                <span className="text-nowrap bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%">
                   Entrepreneurship-Cell UVCE
                 </span>
                 , collaborating with industry leaders.
@@ -64,7 +64,7 @@ const AboutMe = () => {
                 <br></br>
                 Outside of work, I enjoy reading books, playing badminton,
                 writing poetry and watching movies while sipping{" "}
-                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%">
                   a cup of chai.
                 </span>
               </p>
