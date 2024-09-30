@@ -7,6 +7,7 @@ import Contact from "./components/contact";
 import Header from "./components/header";
 import { Analytics } from "@vercel/analytics/react";
 import { DarkModeProvider } from "./context/darkMode";
+import Projects from "./components/projects";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           <section className="snap-center">
             <Experience />
           </section>
+
+          <Projects/>
 
           {/* Contact me */}
           <Contact />

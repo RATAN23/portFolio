@@ -69,7 +69,7 @@ const Navbar = () => {
                     }}
                     />
                   </a>
-                  <a className="hidden md:block lg:block" href="https://x.com/ratan_23">
+                  <a className="hidden md:block lg:block" href="https://x.com/ratan_23"  target="_blank">
                     <XIcon 
                     sx={{
                       width : "26px",
@@ -77,21 +77,21 @@ const Navbar = () => {
                       color: isDarkMode ? 'white' : 'black'
                   }} />
                   </a>
-                  <a href="https://github.com/RATAN23" >
+                  <a href="https://github.com/RATAN23"  target="_blank" >
                     <GitHubIcon sx={{
                       width : "26px",
                       height : "26px",
                       color: isDarkMode ? 'white' : 'black'
                   }}  />
                   </a>
-                  <a href="https://linkedin.com/in/ratan-ghasti">
+                  <a href="https://linkedin.com/in/ratan-ghasti"  target="_blank">
                     <LinkedInIcon  sx={{
                       width : "26px",
                       height : "26px",
                       color: isDarkMode ? 'white' : 'black'
                   }}  />
                   </a>
-                  <a href="https://leetcode.com/u/rnghasti42/">
+                  <a href="https://leetcode.com/u/rnghasti42/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1.5em"

@@ -9,10 +9,10 @@ const Experience = () => {
         <div className="top-[18%] absolute md:absolute md:top-[20%] lg:top-[25%]  uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[30px] text-gray-400 text-3xl">
           Experience
         </div>
-        <div className="w-full mt-20 flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-transparent scrollbar-thin  ">
+        <div className="w-full mt-20 md:mt-0 flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-transparent scrollbar-thin  ">
           {Experiences.map((val, index) => {
             return (
-              <article className="flex flex-col rounded-r-lg flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-[#f5f7fa]  dark:bg-gray-300 overflow-hidden md:py-14 py-10 md:mt-10 border-l-2 border-gray-300 hover:border-[#764ba2] md:max-w-3xl max-w-xs md:px-0 px-5 select-none">
+              <article className="flex flex-col rounded-r-lg flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-[#f5f7fa]  dark:bg-gray-300 overflow-hidden md:py-14 py-10 md:mt-10 border-l-2 border-gray-300 hover:border-[#764ba2] md:max-w-2xl max-w-xs md:px-0 px-5 select-none">
                 <div className="flex items-center md:pl-10">
                   <motion.img
                     initial={{ opacity: 0, x: -5 }}
@@ -39,7 +39,7 @@ const Experience = () => {
                     {val.startDate} - {val.endDate}
                   </p>
 
-                  <ul className="list-disc space-y-4 ml-5 dark:font-light font-normal text-black md:text-base lg:text-base mt-4 text-sm">
+                  <ul className="list-disc text-wrap space-y-4 ml-5 dark:font-light font-normal text-black md:text-base lg:text-base mt-4 text-sm">
                     <li>{val.point1}</li>
                     <li>{val.point2}</li>
                   </ul>

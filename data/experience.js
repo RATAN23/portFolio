@@ -8,9 +8,9 @@ export const Experiences = [
     startDate: "July 2021",
     endDate: "June 2024",
     point1:
-      "Developed new features for Visual Business, enhancing the product's functionality and user experience, resulting in a 20% increase in user satisfaction.",
+      "Demonstrated expertise in developing scalable front-end architectures using React JS , integrating HTML5 , CSS3 , JavaScript(ES6) , which improved code maintainability by 40%",
     point2:
-      "Provided timely assistance and effective solutions to over 60 customer escalations for SAP Transportation Management and Collaboration Portal, reducing resolution time by 25% and improving customer retention",
+      " Demonstrated proficiency in optimizing web applications for performance and scalability , improving page load times by 30%through caching strategies and code optimization, which led to a15% increase in user retention",
   },
   {
     logo: "https://img.icons8.com/ios/50/sap.png",
