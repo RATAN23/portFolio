@@ -77,7 +77,7 @@ const AboutMe = () => {
         {
           visible && (
             <div className="absolute bottom-4 left-40 md:left-80 lg:left-1/2">
-            <span className="relative animate-bounce flex justify-center items-center h-10 w-10 rounded-full border-2 border-black ">
+            <span className="relative animate-bounce flex justify-center items-center h-10 w-10 rounded-full border-2 border-black dark:border-white">
              <svg className="absolute inline-flex  w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke={isDarkMode ? "white" : "black"}>
                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
