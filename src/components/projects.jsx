@@ -18,14 +18,17 @@ const Projects = () => {
               <h4 className='font-bold text-xl'>{val.name}</h4>
               <div className='flex items-center space-x-4'>
                 <a className="font-medium text-sm underline flex items-center" href={val.github} target='_blank' rel="noopener noreferrer">
-                  Github 
+                  Github
                   <svg xmlns="http://www.w3.org/2000/svg" className="ml-1" width="16" height="16" viewBox="0 0 32 32">
                     <path d="M18 5v2h5.56L11.28 19.28l1.44 1.44L25 8.44V14h2V5h-9zM5 9v18h18V14l-2 2v9H7V11h9l2-2H5z"></path>
                   </svg>
                 </a>
                 <div className='flex items-center'>
-                  <CircleIcon sx={{ color: '#1fd655', fontSize: '14px', marginRight: '4px' }} />
-                  <span className='text-sm font-medium'>Building</span>
+                  <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1fd655] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#1fd655]"></span>
+                  </span>
+                  <span className='text-sm font-medium ml-1'>Building</span>
                 </div>
               </div>
               <p className='text-sm leading-relaxed md:text-lg lg:text-base'>

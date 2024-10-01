@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Chip from "@mui/material/Chip";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { darkModeContext } from "../context/darkMode";
 
 const AboutMe = () => {
   const [visible, clearText] = useState(false);
+  const {isDarkMode , toggleDarkMode} = useContext(darkModeContext);
+
   const [text] = useTypewriter({
     words: ["Hey! I'm Ratan :)"],
     loop: 2,
@@ -16,7 +19,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="flex flex-col h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto bg-background  pt-16 ">
+      <div className="relative flex flex-col h-screen text-center overflow-visible md:text-left md:flex-row max-w-6xl md:px-10 justify-evenly items-center mx-auto bg-background  pt-16 ">
         <div className="top-[40px] md:absolute md:top-[20%] lg:absolute   uppercase tracking-[5px] md:tracking-[20px] lg:tracking-[20px] text-gray-400  text-3xl ">
           About
         </div>
@@ -71,7 +74,19 @@ const AboutMe = () => {
             </>
           )}
         </div>
-      </div>
+        {
+          visible && (
+            <div className="absolute bottom-4 left-40 md:left-80 lg:left-1/2">
+            <span className="relative animate-bounce flex justify-center items-center h-10 w-10 rounded-full border-2 border-black ">
+             <svg className="absolute inline-flex  w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke={isDarkMode ? "white" : "black"}>
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+              </svg>
+            </span>
+           </div>
+        
+          )
+        }
+        </div>
     </>
   );
 };
