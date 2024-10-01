@@ -4,8 +4,8 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 const Projects = () => {
   return (
-    <div className="flex flex-col relative min-h-screen py-16 px-4 dark:text-black">
-      <h2 className="text-3xl uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[30px] text-gray-400 text-center mb-12">
+    <div className="flex flex-col relative min-h-screen py-16 px-4 dark:text-black justify-center items-center">
+      <h2 className="text-3xl uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[25px] text-gray-400 text-center mb-8">
         Projects
       </h2>
       <div className='flex flex-wrap justify-center gap-8'>
@@ -28,7 +28,7 @@ const Projects = () => {
                   <span className='text-sm font-medium'>Building</span>
                 </div>
               </div>
-              <p className='text-sm leading-relaxed md:text-lg lg:text-lg'>
+              <p className='text-sm leading-relaxed md:text-lg lg:text-base'>
                 {val.description}
               </p>
               <div className='flex items-center gap-2'>
