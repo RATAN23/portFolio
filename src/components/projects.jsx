@@ -6,7 +6,7 @@ import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
 const Projects = () => {
   return (
     <div className="flex flex-col gap-2 relative min-h-screen py-16 px-4 dark:text-black justify-center items-center">
-      <div className="absolute top-[7rem] sm:top-28 md:top-56 lg:top-60 xl:top-48">
+      <div className="absolute top-[7rem] sm:top-28 md:top-36  ">
       <h2 className="text-3xl uppercase tracking-[10px] md:tracking-[20px] lg:tracking-[25px] text-gray-400 text-center mb-8">
         Projects
       </h2>
