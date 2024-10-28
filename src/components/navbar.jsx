@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import AppBar from "@mui/material/AppBar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import HomeIcon from "@mui/icons-material/Home";
-import XIcon from "@mui/icons-material/X";
 import Box from "@mui/material/Box";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MessageIcon from "@mui/icons-material/Message";
 import { motion, AnimatePresence } from "framer-motion";
 import { darkModeContext } from "../context/darkMode";
-import LightModeIcon from '@mui/icons-material/LightMode';
+import LightModeIcon from "@mui/icons-material/LightMode";
+
 
 const theme = createTheme({
   palette: {
@@ -29,19 +29,24 @@ const theme = createTheme({
 });
 
 const Navbar = () => {
-  const {isDarkMode , toggleDarkMode} = useContext(darkModeContext);
+  const { isDarkMode, toggleDarkMode } = useContext(darkModeContext);
 
   return (
     <>
       <ThemeProvider theme={theme}>
-        <AppBar position="fixed" color="primary" className="dark:bg-[#080917]  dark:opacity-90">
+        <AppBar
+          position="fixed"
+          color="primary"
+          className="dark:bg-[#080917]  dark:opacity-90"
+        >
           <AnimatePresence>
             <motion.div
               layout
               initial={{ x: -300 }}
               animate={{ x: 0 }}
               transition={{ ease: "linear", duration: 0.7 }}
-              exit={{ x: 300 }}le
+              exit={{ x: 300 }}
+              le
             >
               <Box
                 width="100vw"
@@ -61,35 +66,41 @@ const Navbar = () => {
                   }}
                 >
                   <a href="/">
-                    <HomeIcon 
-                     sx={{
-                        width : "30px",
-                        height : "30px",
-                        color: isDarkMode ? 'white' : 'black'
-                    }}
+                    <HomeIcon
+                      sx={{
+                        width: "30px",
+                        height: "30px",
+                        color: isDarkMode ? "white" : "black",
+                      }}
                     />
                   </a>
-                  <a className="hidden md:block lg:block" href="https://x.com/ratan_23"  target="_blank">
-                    <XIcon 
-                    sx={{
-                      width : "26px",
-                      height : "26px",
-                      color: isDarkMode ? 'white' : 'black'
-                  }} />
+                  <a
+                    className="hidden md:block lg:block"
+                    href="https://www.hackerrank.com/profile/rnghasti42"
+                    target="_blank"
+                  >
+                   <img className={isDarkMode ? "bg-white rounded-lg" : ""} width="24" height="24" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-bold-tal-revivo.png" alt="external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-bold-tal-revivo"/>
                   </a>
-                  <a href="https://github.com/RATAN23"  target="_blank" >
-                    <GitHubIcon sx={{
-                      width : "26px",
-                      height : "26px",
-                      color: isDarkMode ? 'white' : 'black'
-                  }}  />
+                  <a href="https://github.com/RATAN23" target="_blank">
+                    <GitHubIcon
+                      sx={{
+                        width: "26px",
+                        height: "26px",
+                        color: isDarkMode ? "white" : "black",
+                      }}
+                    />
                   </a>
-                  <a href="https://linkedin.com/in/ratan-ghasti"  target="_blank">
-                    <LinkedInIcon  sx={{
-                      width : "26px",
-                      height : "26px",
-                      color: isDarkMode ? 'white' : 'black'
-                  }}  />
+                  <a
+                    href="https://linkedin.com/in/ratan-ghasti"
+                    target="_blank"
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        width: "26px",
+                        height: "26px",
+                        color: isDarkMode ? "white" : "black",
+                      }}
+                    />
                   </a>
                   <a href="https://leetcode.com/u/rnghasti42/" target="_blank">
                     <svg
@@ -107,20 +118,28 @@ const Navbar = () => {
                 </Box>
 
                 <div className="flex justify-center items-center cursor-pointer space-x-5">
-                  {
-                    isDarkMode ? (
-                     
-                      <LightModeIcon onClick ={toggleDarkMode} sx={{color: isDarkMode ? 'white' : 'black'}} />
-                    ) :
-                    (
-                      <img width="23" height="23" src="https://img.icons8.com/glyph-neue/64/bright-moon.png" onClick ={toggleDarkMode} alt="bright-moon"/>
-                    )
-                  }
-                  
-                  <MessageIcon className="mt-1" sx={{color: isDarkMode ? 'white' : 'black'}} fontSize="medium"  />
+                  {isDarkMode ? (
+                    <LightModeIcon
+                      onClick={toggleDarkMode}
+                      sx={{ color: isDarkMode ? "white" : "black" }}
+                    />
+                  ) : (
+                    <img
+                      width="23"
+                      height="23"
+                      src="https://img.icons8.com/glyph-neue/64/bright-moon.png"
+                      onClick={toggleDarkMode}
+                      alt="bright-moon"
+                    />
+                  )}
+
+                  <MessageIcon
+                    className="mt-1"
+                    sx={{ color: isDarkMode ? "white" : "black" }}
+                    fontSize="medium"
+                  />
                   {/* <p className="hidden lg:ml-1 md:ml-1 md:block lg:block whitespace-nowrap">Get in touch</p> */}
                 </div>
-
               </Box>
             </motion.div>
           </AnimatePresence>
