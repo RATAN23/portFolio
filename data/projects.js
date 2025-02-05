@@ -9,7 +9,7 @@ const style = { width: "30px", height: "22px" };
 export const project = [
   {
     name: "StockUp",
-    progress: "Live",
+    progress: "Building",
     description:
       "Stock Up is an inventory management system, built with NextJS and NodeJS for seamless inventory tracking",
     stack: {
