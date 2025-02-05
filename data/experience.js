@@ -2,6 +2,17 @@ import uvceImage from "../src/assets/uvceImage.png";
 
 export const Experiences = [
   {
+    logo: "https://cdn.brandfetch.io/idyXjDSK38/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",  
+    title: "Software Engineer - II ",
+    company: "Curriculum Associates",
+    startDate: "November 2024",
+    endDate: "",
+    point1:
+      "Developing a WCAG 2.2-Compliant eReader for Student Edition using TypeScript, ReactJs and bunch of frontend tools",
+    point2:
+      "Spearheading transition and implementation of eReader platform, managing knowledge transfer sessions and accessibility compliance for Student Edition"
+  },
+  {
     logo: "https://img.icons8.com/ios/50/sap.png",
     title: "Associate Developer",
     company: "SAP LABS INDIA",
