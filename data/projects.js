@@ -9,7 +9,6 @@ const style = { width: "30px", height: "22px" };
 export const project = [
   {
     name: "StockUp",
-    progress: "Building",
     description:
       "Stock Up is an inventory management system, built with NextJS and NodeJS for seamless inventory tracking",
     stack: {
@@ -25,11 +24,10 @@ export const project = [
     },
     image: stockup,
     github: "https://github.com/RATAN23/Stockit",
-    link: "https://main.d2v63p0dorebav.amplifyapp.com/",
+    link: "",
   },
   {
     name: "CoreSync",
-    progress: "Building",
     description:
       "CoreSync is a powerful project management and development tool, built with ReactJS for seamless task tracking. Inspired by platforms like Kanban and JIRA, it offers efficient workflow management for teams.",
     stack: {
@@ -47,7 +45,6 @@ export const project = [
   },
   {
     name: "Portfolio",
-    progress: "Live",
     description:
       "ReactJs was used to create the portfolio website. TailwindCSS and Framer motion were used to style the website",
     stack: {

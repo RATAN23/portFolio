@@ -25,7 +25,7 @@ const AboutMe = () => {
         </div>
         <img
           className="h-40 flex-shrink-0 w-44 rounded-xl object-cover md:rounded-2xl md:w-64 md:h-96 xl:w-[350px] xl:h-[350px]"
-          src="https://dfy2ssrejjejg.cloudfront.net/personalPic.jpg"
+          src="/public/personalPic.jpg"
           alt="ratan's photo"
         ></img>
         <div className="h-1/2 mx-auto md:h-auto lg:h-auto w-[90%] md:w-1/2 lg:w-1/2 ">
