@@ -8,9 +8,9 @@ export const Experiences = [
     startDate: "November 2024",
     endDate: "",
     point1:
-      "Developing a WCAG 2.2-Compliant eReader for Student Edition using TypeScript, ReactJs and bunch of frontend tools",
+      "Built a Kindle-like cross-platform digital reading platform used by 15K+ learners, supporting laptops, tablets, and iPads,increasing multi-device engagement by 25%.",
     point2:
-      "Spearheading transition and implementation of eReader platform, managing knowledge transfer sessions and accessibility compliance for Student Edition"
+      "Improved platform reliability by maintaining 85%+ unit test coverage and introducing Playwright E2E tests for 10+ critical workflows, reducing regression issues by 35%."
   },
   {
     logo: "https://img.icons8.com/ios/50/sap.png",
