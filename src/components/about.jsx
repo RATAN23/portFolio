@@ -46,13 +46,13 @@ const AboutMe = () => {
               <br />
               <br />
               <p className="text-sm font-normal md:text-lg lg:text-lg overflow-visible text-darkText">
-                I'm a passionate{" "}
+                I'm a {" "}
                 <span className="bg-gradient-to-r from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%">
-                  Software Developer{" "}
+                passionate high agency{" "}
                 </span>{" "}
-                with over three years of experience at{" "}
+                Software Developer with over 5 years of experience at{" "}
                 <span className="text-nowrap bg-gradient-to-r  from-[#1488CC] from-10%  to-[#2B32B2] to-80% text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-[#6a11cb] dark:from-10% dark:to-[#3a4be5] dark:to-80%"> 
-                  SAP Labs India
+                  Curriculum Associates, SAP Labs India
                 </span>
                 . Crafting sophisticated answers to complicated questions drives
                 me.
